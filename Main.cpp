@@ -251,7 +251,7 @@ int main()
     auto objBanana = createObject(
         "Banana",
         "syrup",
-        glm::vec3(3.5f, 0.8f, -2.5f),
+        glm::vec3(3.5f, 0.95f, -2.5f),
         Banana,
         glm::vec3(0.25f)
 
@@ -260,12 +260,20 @@ int main()
     auto objStawberry = createObject(
         "Stawberry",
         "syrup",
-        glm::vec3(3.8f, 0.8f, -2.5f),
+        glm::vec3(3.8f, 0.95f, -2.5f),
         Stawberry,
         glm::vec3(0.25f)
 
     );
 
+    auto objChocolate = createObject(
+        "Chocolate",
+        "main",
+        glm::vec3(3.5f, 0.95f,-0.5f),
+        Chocolate,
+        glm::vec3(0.25f)
+
+    );
 
 
     objects.push_back(objCups);
@@ -275,6 +283,7 @@ int main()
     objects.push_back(objCoffee);
     objects.push_back(objBanana);
     objects.push_back(objStawberry);
+    objects.push_back(objChocolate);
     insertObject(objMilk);
     insertObject(objCups);
     insertObject(objIce);
@@ -282,7 +291,7 @@ int main()
     insertObject(objCoffee);
     insertObject(objBanana);
     insertObject(objStawberry);
-
+    insertObject(objChocolate);
     std::cout << "loaded model" << std::endl;
     text.init();
     std::cout << "inited text" << std::endl;
